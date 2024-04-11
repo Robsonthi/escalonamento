@@ -4,15 +4,17 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-//Numero de linhas da matriz
-const int lin=4;
-//Numero de colunas da matriz + 1
-const int con=5;
-
 int main(void){
 	FILE *fptr;
+	int lin,con,i,j,k;
+
+	//Leitura do numero de linhas
+	scanf("%d",&lin);
+	//Leitura do numero de colunas
+	scanf("%d",&con);
+
 	float Mat[lin][con];
-	int i,j,k;
+	
 	//Leitura da matriz
 	for(i=0;i<lin;i++){
 		for(j=0;j<con;j++){
